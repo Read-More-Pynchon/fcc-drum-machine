@@ -101,82 +101,88 @@ export default function DrumPad(props: DrumPadProps) {
     switch (props.color) {
         case "teal":
             return (
-                <div
+                  <div
+                    id={sample.title.replace(' ', '-').toLowerCase()}
                     onClick={handleClick}
                     tabIndex={0}
                     role="button"
                     aria-label={`Drum pad ${props.letter}`}
-                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-teal text-blue p-3 m-3 shadow-lg shadow-purple hover:bg-pink ">
-                    <p className="text-center text-xl font-bold align-middle">{props.letter}</p>
+                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-teal text-blue p-3 m-3 shadow-lg shadow-purple hover:bg-pink text-center text-xl font-bold align-middle">
+               {props.letter}
                     <audio id={props.letter} src={sample.source} ref={audioRef} className="clip">
                     </audio>
                 </div>
             );
         case 'pink':
             return (
-                <div
+                  <div
+                    id={sample.title.replace(' ', '-').toLowerCase()}
                     onClick={handleClick}
                     tabIndex={0}
                     role="button"
                     aria-label={`Drum pad ${props.letter}`}
-                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-pink text-white p-3 m-3 shadow-lg shadow-purple  hover:bg-blue">
-                    <p className="text-center text-xl font-bold align-middle">{props.letter}</p>
+                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-pink text-white p-3 m-3 shadow-lg shadow-purple  hover:bg-blue text-center text-xl font-bold align-middle">
+                    {props.letter}
                     <audio id={props.letter} src={sample.source} ref={audioRef} className="clip">
                     </audio>
                 </div>
             );
         case 'purple':
             return (
-                <div
+                  <div
+                    id={sample.title.replace(' ', '-').toLowerCase()}
                     onClick={handleClick}
 
                     tabIndex={0}
                     role="button"
                     aria-label={`Drum pad ${props.letter}`}
-                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-purple text-white p-3 m-3 shadow-lg shadow-purple hover:bg-blackish">
-                    <p className="text-center text-xl font-bold align-middle">{props.letter}</p>
+                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-purple text-white p-3 m-3 shadow-lg shadow-purple hover:bg-blackish text-center text-xl font-bold align-middle">
+               {props.letter}
                     <audio id={props.letter} src={sample.source} ref={audioRef} className="clip">
                     </audio>
                 </div>
             );
         case 'blue':
             return (
-                <div
+                  <div
+                    id={sample.title.replace(' ', '-').toLowerCase()}
                     onClick={handleClick}
 
                     tabIndex={0}
                     role="button"
                     aria-label={`Drum pad ${props.letter}`}
-                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-blue text-teal p-3 m-3 shadow-lg shadow-purple hover:bg-pink">
-                    <p className="text-center text-xl font-bold align-middle">{props.letter}</p>
+                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-blue text-teal p-3 m-3 shadow-lg shadow-purple hover:bg-pink text-center text-xl font-bold align-middle">
+               {props.letter}
                     <audio id={props.letter} src={sample.source} ref={audioRef} className="clip">
                     </audio>
                 </div>
             );
         case 'blackish':
             return (
-                <div
+                  <div
+                    id={sample.title.replace(' ', '-').toLowerCase()}
                     onClick={handleClick}
 
                     tabIndex={0}
                     role="button"
                     aria-label={`Drum pad ${props.letter}`}
-                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-blackish text-teal p-3 m-3 shadow-lg shadow-purple hover:bg-purple">
-                    <p className="text-center text-xl font-bold align-middle">{props.letter}</p>
+                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-blackish text-teal p-3 m-3 shadow-lg shadow-purple hover:bg-purple text-center text-xl font-bold align-middle">
+               {props.letter}
                     <audio id={props.letter} src={sample.source} ref={audioRef} className="clip">
                     </audio>
                 </div>
             );
         case 'white':
             return (
-                <div
+                  <div
+                    id={sample.title.replace(' ', '-').toLowerCase()}
                     onClick={handleClick}
 
                     tabIndex={0}
                     role="button"
                     aria-label={`Drum pad ${props.letter}`}
-                    className="col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-white text-blue p-3 m-3 shadow-lg shadow-purple hover:bg-pink">
-                    <p className="text-center text-xl font-bold align-middle">{props.letter}</p>
+                    className="col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-white text-blue p-3 m-3 shadow-lg shadow-purple hover:bg-pink text-center text-xl font-bold align-middle">
+               {props.letter}
                     <audio id={props.letter} src={sample.source} ref={audioRef} className="clip">
                     </audio>
                 </div>
@@ -184,14 +190,15 @@ export default function DrumPad(props: DrumPadProps) {
 
         default:
             return (
-                <div
+                  <div
+                    id={sample.title.replace(' ', '-').toLowerCase()}
                     onClick={handleClick}
 
                     tabIndex={0}
                     role="button"
                     aria-label={`Drum pad ${props.letter}`}
-                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-blue text-white p-3 m-3 shadow-lg shadow-purple">
-                    <p className="text-center text-xl font-bold align-middle">{props.letter}</p>
+                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-blue text-white p-3 m-3 shadow-lg shadow-purple text-center text-xl font-bold align-middle">
+               {props.letter}
                     <audio id={props.letter} src={sample.source} ref={audioRef} className="clip">
                     </audio>
                 </div>
