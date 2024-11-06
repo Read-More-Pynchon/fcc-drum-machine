@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Display from "./Components/Display";
+import PadBoard from "./Components/PadBoard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-blackish w-full h-screen box-border p-4">
+      <h1 className="text-3xl text-pink text-bold font-sans text-center">Drum Machine - Free Code Camp</h1>
+      <div id="drum-machine" className="grid grid-cols-2 m-3 p-3 bg-teal">
+
+        <PadBoard />
+        <Display />
+      </div>
     </div>
   );
 }
