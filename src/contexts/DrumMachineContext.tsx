@@ -19,9 +19,9 @@ interface DrumMachineContextProps {
 }
 
 const DrumMachineContext = createContext<DrumMachineContextProps>({
-    power: false,
+    power: true,
     setPower: () => { },
-    volume: 0.2,
+    volume: 0.8,
     setVolume: () => { },
     currentPad: '',
     setCurrentPad: () => { },
@@ -30,8 +30,8 @@ const DrumMachineContext = createContext<DrumMachineContextProps>({
 })
 
 export const ContextProvider: React.FC<ContextProviderProps> = ({ children }) => {
-    const [power, setPower] = useState<boolean>(false);
-    const [volume, setVolume] = useState<number>(0.2);
+    const [power, setPower] = useState<boolean>(true);
+    const [volume, setVolume] = useState<number>(0.8);
     const [currentPad, setCurrentPad] = useState<string>('');
     const [currentBank, setCurrentBank] = useState<string>('A');
     

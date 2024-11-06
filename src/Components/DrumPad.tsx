@@ -181,7 +181,7 @@ export default function DrumPad(props: DrumPadProps) {
                     tabIndex={0}
                     role="button"
                     aria-label={`Drum pad ${props.letter}`}
-                    className="col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-white text-blue p-3 m-3 shadow-lg shadow-purple hover:bg-pink text-center text-xl font-bold align-middle">
+                    className="drum-pad col-span-1 w-16 h-16 rounded-lg border-2 border-blackish-300 bg-white text-blue p-3 m-3 shadow-lg shadow-purple hover:bg-pink text-center text-xl font-bold align-middle">
                {props.letter}
                     <audio id={props.letter} src={sample.source} ref={audioRef} className="clip">
                     </audio>
